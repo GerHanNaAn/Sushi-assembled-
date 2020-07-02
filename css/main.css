@@ -7167,100 +7167,127 @@ body {
   font-family: 'Pangolin', cursive;
   font-family: 'Poppins', sans-serif; }
 
-.header .navbar {
-  padding: 4.5px 1px;
-  border-bottom: rgba(34, 34, 34, 0.125) 1px solid; }
+h1 {
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center; }
 
-.header .container {
-  max-width: 1920px;
-  padding: 0; }
-
-.header .navbar-brand {
-  margin-left: 92px; }
-
-.header .navbar-collapse .nav-link {
-  font-weight: bold;
-  font-size: 20px;
-  color: black; }
-
-.header .navbar-collapse .dropdown-menu {
-  width: 182px;
-  height: 285px;
-  padding-top: 4px;
-  padding-bottom: 12px;
-  border: 0;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.13);
-  border-radius: 6px; }
-  .header .navbar-collapse .dropdown-menu .dropdown-item {
-    padding: 0 20px; }
-    .header .navbar-collapse .dropdown-menu .dropdown-item:hover {
-      background: #FF1744; }
-    .header .navbar-collapse .dropdown-menu .dropdown-item .dropdown-item__text {
-      margin: 0;
-      padding-bottom: 7px;
-      padding-top: 15px;
-      font-size: 14px;
-      color: black;
-      border-bottom: 0.6px solid #E1E1E1; }
-      .header .navbar-collapse .dropdown-menu .dropdown-item .dropdown-item__text:hover {
-        color: #FFFFFF;
-        border-bottom: 0.6px solid transparent; }
-      .header .navbar-collapse .dropdown-menu .dropdown-item .dropdown-item__text_bold {
-        font-weight: bold; }
-      .header .navbar-collapse .dropdown-menu .dropdown-item .dropdown-item__text_unbordered {
-        border-bottom: 0.6px solid transparent; }
-
-.header .contacts {
-  margin-right: 42px; }
-  .header .contacts__number {
-    font-weight: bold;
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 20;
+  border-bottom: 1px solid #9C9C9C;
+  box-shadow: 0px 1.34307px 6.71533px rgba(0, 0, 0, 0.13);
+  background: #FFFFFF; }
+  .header .chat {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    z-index: 2; }
+  .header .header-box {
+    max-width: 1920px;
+    margin: 0 auto;
+    min-height: 98px;
+    display: flex;
+    align-items: center; }
+  .header .header-logo {
+    width: 150px;
+    height: 77px;
+    margin: 9px auto 9px 96px; }
+  .header .contacts__item {
+    display: block; }
+  .header .navigation {
+    list-style-type: none;
+    display: flex;
+    padding: 0; }
+    .header .navigation_margin-right {
+      margin-right: 285px; }
+    .header .navigation__item:not(:last-child) {
+      margin-right: 80px; }
+    .header .navigation__ref {
+      color: #222222;
+      font-weight: bold;
+      font-size: 20px;
+      text-decoration: none; }
+  .header .contacts_margin-right {
+    margin-right: 37px; }
+  .header .contacts__item {
     font-size: 16px;
-    color: #222222; }
-  .header .contacts__time {
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: bold; }
+  .header .contacts__work-time {
     color: #9C9C9C;
-    margin-bottom: -7px; }
-
-.header .purchases {
-  height: 50px;
-  border: 1px solid #E1E1E1;
-  border-radius: 10px;
-  box-sizing: border-box;
-  margin-right: 101px;
-  padding-left: 38px;
-  display: inline-block;
-  color: #222222;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px; }
-  .header .purchases__quantity {
-    color: white;
-    height: 58px;
-    width: 58px;
-    background: #FF1744;
-    text-align: center;
-    line-height: 58px;
-    border-radius: 50%;
-    display: inline-block;
-    font-style: normal;
+    margin-top: 10px; }
+  .header .purchases {
+    text-decoration: none;
+    position: relative;
     font-weight: bold;
     font-size: 20px;
-    margin-top: -5px;
-    position: relative;
-    left: 13px; }
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 188px;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 32px;
+    margin-right: 96px; }
+    .header .purchases__black {
+      color: #222222; }
+    .header .purchases__quantity {
+      position: absolute;
+      color: #FFFFFF;
+      background: #FF1744;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      line-height: 58px;
+      text-align: center;
+      bottom: -7px;
+      left: 134px; }
+  .header .dropdown-menu {
+    width: 182px;
+    height: 285px;
+    padding-top: 4px;
+    padding-bottom: 12px;
+    border: 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.13);
+    border-radius: 6px; }
+    .header .dropdown-menu .dropdown-item {
+      padding: 0 20px; }
+      .header .dropdown-menu .dropdown-item:hover {
+        background: #FF1744; }
+      .header .dropdown-menu .dropdown-item__text {
+        margin: 0;
+        padding-bottom: 7px;
+        padding-top: 15px;
+        font-size: 14px;
+        color: black;
+        border-bottom: 0.6px solid #E1E1E1; }
+        .header .dropdown-menu .dropdown-item__text:hover {
+          color: #FFFFFF;
+          border-bottom: 0.6px solid transparent; }
+        .header .dropdown-menu .dropdown-item__text_bold {
+          font-weight: bold; }
+        .header .dropdown-menu .dropdown-item__text_unbordered {
+          border-bottom: 0.6px solid transparent; }
 
-@media (max-width: 1694px) and (min-width: 1371px) {
-  .header .nav-item {
-    margin-right: 64px; } }
-
-@media (max-width: 1940px) and (min-width: 1695px) {
-  .header .navbar-brand {
-    margin-right: 0; }
-  .header .navbar-nav {
-    margin-left: 339px !important; }
-  .header .nav-item {
-    margin-right: 64px; } }
+.back .back-btn {
+  position: fixed;
+  left: 20px;
+  z-index: 30;
+  display: flex;
+  padding: 5px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 10px; }
+  .back .back-btn:hover {
+    border: 1px solid #FF1744; }
+  .back .back-btn__img {
+    padding-bottom: 1px; }
+  .back .back-btn__text {
+    font-weight: bold;
+    color: #9C9C9C;
+    margin: auto 0 auto 15px; }
 
 .reviews .reviews__title {
   margin: 25px; }
@@ -7416,12 +7443,6 @@ body {
 .footer .ul-padding {
   padding-left: 20px; }
 
-.catalog .chat {
-  position: fixed;
-  right: 20px;
-  bottom: 100px;
-  z-index: 2; }
-
 .catalog .catalog__title {
   font-weight: 600;
   font-size: 36px;
@@ -7467,5 +7488,91 @@ body {
     font-weight: bold;
     font-size: 20px;
     line-height: 40px; }
+
+.stocks-page .title_margin {
+  margin-top: 159px; }
+
+.stocks-page .container {
+  padding: 0; }
+
+.stocks-page .wrap {
+  display: flex;
+  align-items: center;
+  position: relative; }
+  .stocks-page .wrap::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 70%;
+    background: #F7F7F7;
+    top: 50px; }
+
+.stocks-page .row {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.stocks-page .card-ref {
+  max-width: 368px;
+  display: flex;
+  padding: 0 0px;
+  margin: 0 8px 30px;
+  text-decoration: none;
+  background: #FFFFFF;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.17);
+  border-radius: 10px; }
+  .stocks-page .card-ref__body {
+    padding: 16px; }
+  .stocks-page .card-ref__img {
+    width: 100%; }
+  .stocks-page .card-ref__title {
+    color: #222222;
+    font-weight: 900;
+    font-size: 24px; }
+    .stocks-page .card-ref__title:hover {
+      text-decoration: underline; }
+  .stocks-page .card-ref__text {
+    color: #505050;
+    font-size: 16px; }
+
+.subscription .subscription-container {
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+
+.subscription .sub-btn {
+  text-align: center;
+  text-decoration: none;
+  min-width: 176px;
+  border-radius: 10px;
+  padding: 6px;
+  display: inline-block;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+
+.subscription__text {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 40px; }
+
+.subscription__soc {
+  background: #FF1744;
+  color: #FFFFFF;
+  font-weight: bold; }
+  .subscription__soc:hover {
+    color: #222222; }
+
+.subscription__mail {
+  background: #FFFFFF;
+  color: #9C9C9C;
+  font-weight: normal;
+  border: 1px solid #E1E1E1;
+  margin-left: 16px; }
+  .subscription__mail:hover {
+    border: 1px solid #FF1744; }
+
+@media (max-width: 600px) {
+  .subscription .subscription__mail {
+    margin: 5px auto; } }
 
 /*# sourceMappingURL=maps/main.css.map */
